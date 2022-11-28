@@ -1,0 +1,16 @@
+Installation
+
+You can install, upgrade, and uninstall pycodestyle.py with these commands:
+
+$ pip install pycodestyle
+$ pip install --upgrade pycodestyle
+$ pip uninstall pycodestyle
+
+
+Example usage and output
+
+$ pycodestyle --first optparse.py
+
+$ pycodestyle --show-source --show-pep8 testsuite/E40.py
+
+https://github.com/PyCQA/pycodestyle#installation
