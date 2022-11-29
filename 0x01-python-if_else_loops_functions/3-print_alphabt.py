@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-for i in range(97,101) + range(102,113) + range(114,123):
-    print(chr(i))
-    
+for ch in range(97, 123):
+        if ch != 101 and ch != 113:
+                print("{:c}".format(ch), end='')

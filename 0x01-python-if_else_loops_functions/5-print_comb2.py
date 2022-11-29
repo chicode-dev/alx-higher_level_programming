@@ -1,4 +1,6 @@
 #!/usr/bin/python3
-for i in range(0,10):
-    for j in range(0,10):
-        print(f"{i:d}{j:d}, ")
+for num in range(0, 100):
+        if num != 99:
+                print("{:02d}, ".format(num), end='')
+        else:
+                print("{:02d}".format(num))
