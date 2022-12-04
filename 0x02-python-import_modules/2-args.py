@@ -1,16 +1,18 @@
 #!/usr/bin/python3
-from sys import argv
-totalarguments = len(argv)
-count = 1
-if totalarguments == 1:
-    print(f'0 arguments.')
-elif totalarguments == 2:
-    argument = argv[1]
-    print(f'1 argument:')
-    print(f'{count:d}: {argument:s}')
-else:
-    print(f'{totalarguments-1:d} arguments:')
-    for num in range(2, totalarguments+1):
-        argument = argv[count]
-        count += 1
-        print(f'{count-1:d}: {argument:s}')
+if __name__ == "__main__":
+    import sys
+    i = len(sys.argv) - 1
+
+    if i == 0:
+        print("{} arguments.".format(i))
+    elif i == 1:
+        print("{} argument:".format(i))
+    else:
+        print("{} arguments:".format(i))
+
+    if i >= 1:
+        i = 0
+        for arg in sys.argv:
+            if i != 0:
+                print("{}: {}".format(i, arg))
+            i += 1
